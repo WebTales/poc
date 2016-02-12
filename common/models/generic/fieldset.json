@@ -1,0 +1,12 @@
+{
+  "name": "fieldset",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "properties": {
+    "locale": {
+      "type": "string"
+    }    
+  },
+  "acls": [],
+  "methods": {}
+}

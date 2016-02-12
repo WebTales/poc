@@ -1,0 +1,65 @@
+{
+  "_meta": {
+    "sources": [
+      "../common/models",
+      "../common/models/generic",
+      "../common/models/fields",
+      "../common/models/content-types",
+      "../common/models/fieldsets",
+      "../common/models/workflow"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "db"
+  },
+  "AccessToken": {
+    "dataSource": "db",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "db",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "db",
+    "public": false
+  },
+  "Role": {
+    "dataSource": "db",
+    "public": false
+  },
+  "article": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "articleFieldset": {
+    "dataSource": "transient",
+    "public": false
+  },
+  "contents": {
+    "dataSource": "transient",
+    "public": false
+  },
+  "fieldset": {
+    "dataSource": "transient",
+    "public": false
+  },
+  "textField": {
+    "dataSource": "transient",
+    "public": false
+  },
+  "workflow": {
+    "dataSource": "transient",
+    "public": false
+  },
+  "articleWorkflow": {
+    "dataSource": "transient",
+    "public": false
+  }
+}

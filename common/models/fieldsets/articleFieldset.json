@@ -1,0 +1,31 @@
+{
+  "name": "articleFieldset",
+  "base": "fieldset",
+  "idInjection": false,
+  "properties": {},
+  "validations": [],
+  "relations": {
+    "Resume": {
+      "type": "embedsOne",
+      "model": "textField",
+      "property": "resume",
+      "options": {
+        "validate": true,
+        "forceId": false,
+        "persistent": true
+      }
+    },
+    "Chapters": {
+      "type": "embedsMany",
+      "model": "textField",
+      "property": "chapters",
+      "options": {
+        "validate": true,
+        "forceId": false,
+        "persistent": true
+      }
+    }    
+  },
+  "acls": [],
+  "methods": {}
+}

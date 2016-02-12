@@ -1,0 +1,48 @@
+{
+  "name": "workflow",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "properties": {
+    "state": {
+      "type": "string",
+      "required": true
+    },
+    "status": {
+      "type": "string",
+      "required": true
+    },    
+    "nativeLanguage": {
+      "type": "string",
+      "required": true
+    },
+    "startPublicationDate": {
+      "type": "number"
+    },
+    "endPublicationDate": {
+      "type": "date"
+    },
+    "target": {
+      "type": "date"
+    },
+    "writeWorkspace": {
+      "type": "boolean"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "page": {
+      "type": "belongsTo",
+      "model": "pages"
+    },
+    "masque": {
+      "type": "belongsTo",
+      "model": "pageMasks"
+    },
+    "bloc": {
+      "type": "belongsTo",
+      "model": "blocks"
+    } 
+  },
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,14 @@
+{
+  "name": "textField",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "properties": {
+    "value": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

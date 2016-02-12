@@ -1,0 +1,41 @@
+{
+  "name": "contents",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "version": {
+      "type": "number"
+    },
+    "createTime": {
+      "type": "date"
+    },
+    "lastUpdateTime": {
+      "type": "date"
+    },
+    "online": {
+      "type": "boolean"
+    }   
+  },
+  "validations": [],
+  "relations": {
+    "lastUpdateUser": {
+      "type": "hasOne",
+      "model": "Users",
+      "foreignKey": "userId"
+    },  
+    "createUser": {
+      "type": "hasOne",
+      "model": "Users",
+      "foreignKey": "userId"
+    }   
+  },
+  "acls": [],
+  "methods": {}
+}
